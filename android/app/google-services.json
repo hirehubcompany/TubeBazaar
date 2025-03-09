@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "440450708687",
+    "project_id": "tubebazaar-b9484",
+    "storage_bucket": "tubebazaar-b9484.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440450708687:android:a1aba38d9650a14d3eb3ba",
+        "android_client_info": {
+          "package_name": "com.tubebazaar.tubebazaar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeiIcx4bVNv0o-m5rA2n6VgGlFrttVZwI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
