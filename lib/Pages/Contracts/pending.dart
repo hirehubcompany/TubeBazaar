@@ -21,7 +21,7 @@ class _PendingState extends State<Pending> {
     }
 
     return Scaffold(
-      appBar: AppBar(title: Text("Pending Applications")),
+
       body: StreamBuilder(
         stream: FirebaseFirestore.instance
             .collection('AppliedJobs')
@@ -87,3 +87,5 @@ class _PendingState extends State<Pending> {
     ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Application $newStatus")));
   }
 }
+
+

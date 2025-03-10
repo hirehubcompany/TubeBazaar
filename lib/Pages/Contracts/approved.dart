@@ -22,7 +22,7 @@ class _ApprovedState extends State<Approved> {
     }
 
     return Scaffold(
-      appBar: AppBar(title: Text("Approved Applications")),
+
       body: StreamBuilder(
         stream: FirebaseFirestore.instance
             .collection('AppliedJobs')
@@ -54,15 +54,17 @@ class _ApprovedState extends State<Approved> {
                     children: [
                       Text("Category: ${application['category']}"),
                       Text("Price: \$${application['price']}"),
-                      Text("Applied by: ${application['appliedBy']}"),
-                      Text("Posted by: ${application['userId']}"),
+
                     ],
                   ),
                   trailing: ElevatedButton(
                     onPressed: () {
+                      showModalBottomSheet(context: context, builder: (context){
+                        return Container();
+                      });
                       // Handle channel transfer process
                     },
-                    child: Text("Complete Transfer"),
+                    child: Text("Complete Here"),
                   ),
                 ),
               );
@@ -73,3 +75,4 @@ class _ApprovedState extends State<Approved> {
     );
   }
 }
+
